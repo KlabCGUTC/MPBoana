@@ -1,0 +1,37 @@
+# MPBoana
+
+MPBoana is a FastAPI-powered application for analyzing text. It provides endpoints for both **sentiment analysis** (using the MeaningCloud API) and **political view classification** (using Hugging Face transformers). The project is designed to work with Portuguese text but can easily be adapted for other languages.
+
+---
+
+## Features
+
+- **Sentiment Analysis**:
+  - Integrates with the [MeaningCloud Sentiment Analysis API](https://www.meaningcloud.com/products/sentiment-analysis).
+  - Analyzes text for emotions like positive, negative, neutral, etc.
+
+- **Political View Classification**:
+  - Utilizes a Hugging Face transformer-based model for predicting political bias or alignment in text.
+
+- **API Endpoints**:
+  - `GET /`: Root endpoint, returns a welcome message.
+  - `POST /analyze/sentiment`: Accepts text input and returns sentiment analysis results.
+  - Additional endpoints can be added for more NLP tasks.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+1. Python 3.10 or higher is recommended.
+2. Install [pip](https://pip.pypa.io/en/stable/) and [virtualenv](https://virtualenv.pypa.io/en/latest/).
+3. Ensure you have a [MeaningCloud API key](https://www.meaningcloud.com/developer/account).
+
+---
+
+### Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/KlabCGUTC/MPBoana
+   cd MPBoana
